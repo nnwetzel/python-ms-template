@@ -1,0 +1,18 @@
+# Project specific settings
+[project]
+name = "python-ms-template"
+description = "A basic template for a Python MS application with a health check endpoint"
+version = "0.0.1"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi==0.115.6",
+    "python-json-logger==3.2.1",
+    "uvicorn==0.34.0",
+    "python-dotenv==1.0.0",
+]
+
+[dependency-groups]
+dev = [
+    "pre-commit>=4.1.0",
+]
